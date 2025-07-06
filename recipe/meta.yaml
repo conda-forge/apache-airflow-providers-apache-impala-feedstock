@@ -1,5 +1,6 @@
 {% set name = "apache-airflow-providers-apache-impala" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_impala-{{ version }}.tar.gz
-  sha256: e95e6e64d347f5ea72cb60d8e338c128e366d4a55e887b7e0ff4369f5c9dd6fb
+  sha256: 5984ab5d70a4121ee80ef2a8c2f9d60d062c64d334c5d21704a8f592d4171ce5
 
 build:
   noarch: python
