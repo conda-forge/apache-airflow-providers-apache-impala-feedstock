@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-impala
-  version: 1.9.0
+  version: "1.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     - apache-airflow-providers-common-compat >=1.12.0
     - apache-airflow-providers-common-sql >=1.32.0
     - apache-airflow >=2.11.0
+
 tests:
   - python:
       imports:
