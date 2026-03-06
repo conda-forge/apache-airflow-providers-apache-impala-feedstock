@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-impala
-  version: "1.8.1"
+  version: 1.9.0
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_impala-${{ version }}.tar.gz
-  sha256: 556cfb3a5038a943519854b3a064c37c7d54f2aede5c87f38668e61029a9590e
+  sha256: d392c2f9d5b85acb1083158e6d5a664cf21dc00ef22c81197b6eb5071916346a
 
 build:
   noarch: python
@@ -24,9 +24,8 @@ requirements:
     - python >=${{ python_min }}
     - impyla >=0.22.0,<1.0
     - apache-airflow-providers-common-compat >=1.12.0
-    - apache-airflow-providers-common-sql >=1.26.0
+    - apache-airflow-providers-common-sql >=1.32.0
     - apache-airflow >=2.11.0
-
 tests:
   - python:
       imports:
