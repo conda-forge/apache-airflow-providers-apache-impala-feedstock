@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-impala
-  version: "1.9.2"
+  version: "1.9.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_impala-${{ version }}.tar.gz
-  sha256: 25e17e52a9dc7ece491901d17d64f2818bcd4ad6e0fe5a1506ac5997f7b29ba8
+  sha256: 0aa4a6a10952da54d61c5da7c72e86f7aee7dca1d8ba4521bf94afe2d90c1980
 
 build:
   noarch: python
